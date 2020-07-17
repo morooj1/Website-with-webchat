@@ -1,0 +1,89 @@
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+<title> control panel </title>
+<style>
+body {background-color: #ccb3ff ;
+background-image: url(robot.png);
+background-repeat: no-repeat;
+background-size: 40% 100%;
+background-size: auto;
+background-position: left top;
+text-align: center;
+}
+
+h1 {
+  color: white;
+font-size: 58px;
+font-weight: 800;
+position: relative;
+margin-top: 1.2em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+text-align: center;
+font-family: "montserrat";
+}
+table {
+ width: 400px;
+ height: 100%;
+ padding: 5px;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+button {
+  background-color: #ffffff;
+/*  height: 60px;
+  width: 15%;*/
+  border: 1px ;
+  font-size: 25px;
+  border-radius: 100px;
+  font-family: "montserrat";
+  padding: 15px ;
+  margin: 1px ;
+  padding-left: 30px;
+padding-right: 30px;
+
+
+}
+button:hover {
+ background: #9966ff;
+ cursor: pointer;
+ text-transform: uppercase;
+
+}
+
+</style>
+</head>
+
+<body>
+   <table ><tr><td> <h1> Control Panel </h1></td> </tr>
+  <tr><td style= "width:100%; text-align: center;"><button type="button"> Forwards </button></td></tr>
+  <tr><td><button type="button"> Left </button>
+  <button type="button"> Stop </button>
+  <button type="button"> Right </button></td></tr>
+  <tr><td><button class=button5 type="button"> Backwards </button></td> </tr>
+</th> </tr></table>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "b0c9bdc1-bda6-402c-a059-7672bdaf8e34", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "001da89e-566e-4762-90a8-edd698778b07", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+
+
+
+</html>
